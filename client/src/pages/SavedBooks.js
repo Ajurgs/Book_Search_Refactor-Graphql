@@ -12,6 +12,7 @@ import { useParams } from 'react-router-dom';
 const SavedBooks = () => {
   const {loading,data} = useQuery(QUERY_ME);
   console.log(data);
+  console.log(data.savedBooks);
   const user = data?.user || {};
   // const [userData, setUserData] = useState({});
 
